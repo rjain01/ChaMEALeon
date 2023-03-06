@@ -14,12 +14,11 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src='https://picsum.photos/1530/400'
+          src= 'https://picsum.photos/1530/400'
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First sliddjkwbdkjwbdke label</h3>
-          <p>Nulla vitae elit ld wbdjibero, a pharetra augue mollis interdum.</p>
+          <h3>Take the stress out of meal time.Ready to cook meal along with its recipe</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,8 +28,7 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Second</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Full satisfaction of home-made food.</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -40,12 +38,11 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>50% off on your first purchase</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default ControlledCarousel;
+export default ControlledCarousel
