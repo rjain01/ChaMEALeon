@@ -1,7 +1,4 @@
 import React from "react";
-// For counter
-import { useState } from "react";
-//
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -18,16 +15,6 @@ const All = () => {
   };
 
   const [modalShow, setModalShow] = React.useState(false);
-
-  // Counter
-  const [count, setCount] = useState(1);
-  const inc=()=>{
-    setCount(count+1);
-  }
-  const dec=()=>{
-    setCount(count-1);
-  }
-
   return (
     <div>
       <h2 className="heading">All Menu</h2>
@@ -50,11 +37,7 @@ const All = () => {
                   onHide={() => setModalShow(false)}
                 />
               </div> */}
-            <div>
-              <button onClick={dec}>-</button>
-              {count}
-              <button onClick={inc}>+</button>
-            </div>
+          
           </Card.Body>
         </Card>
 
