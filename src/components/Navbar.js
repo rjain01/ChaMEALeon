@@ -5,6 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../styles/Navbar.css";
+import Badge from 'react-bootstrap/Badge';
+
 
 function CollapsibleExample() {
   return (
@@ -28,13 +30,8 @@ function CollapsibleExample() {
             <Nav.Link eventKey={2} href="#memes">
               Menu
             </Nav.Link>
+            {/* <FontAwesomeIcon icon="fa-thin fa-cart-shopping" /><Badge bg="secondary">9</Badge> */}
           </Nav>
-          {/* <NavDropdown title="Filter by Diet" id="navbarScrollingDropdown">
-            <NavDropdown.Item href="#action3">Vegan</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Vegetarian</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Paleo</NavDropdown.Item>
-            <NavDropdown.Item href="#action5">Keto</NavDropdown.Item>
-          </NavDropdown> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

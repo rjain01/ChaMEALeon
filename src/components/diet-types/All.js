@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../../styles/Menu.css";
-import PopUp from './components/diet-types/PopUp'
 import biryani from "../../assets/all/biryani.jpg";
 import channamasala from "../../assets/all/biryani.jpg";
 import tandoorichicken from "../../assets/all/biryani.jpg";
@@ -11,15 +10,20 @@ import tandoorichicken from "../../assets/all/biryani.jpg";
 
 const All = () => {
   let navigate = useNavigate();
+  const [count, setCount] = useState(0);
+  const inc = () => {
+    setCount(count + 1)
+  }
+  const dec = () => {
+    setCount(count - 1)
+  }
   const handleClick = (e) => {
     navigate(e.target.id);
   };
 
-  const [modalShow, setModalShow] = React.useState(false);
-
   return (
-    <div> 
-       <h2 class="heading">All Menu</h2>
+    <div>
+      <h2 className="display-4">All Menu</h2>
       <div id="card-display">
         <Card
           onClick={handleClick}
@@ -27,35 +31,29 @@ const All = () => {
           style={{ width: "30%" }}
         >
           <Card.Img variant="top" id="all" src={biryani} />
-            <Card.Body>
-              <Card.Title className="card-title">Biryani</Card.Title>
-              <div>
-                <Button variant="success" onClick={() => setModalShow(true)}>
-                  ADD
-                </Button>
-
-                <MyVerticallyCenteredModal
-                  show={modalShow}
-                  onHide={() => setModalShow(false)}
-                />
-              </div>
-            </Card.Body>
+          <Card.Body>
+            <h4 className="display-6">Biryani</h4>
+            <div>
+              <button className='button-24' onClick={dec}>-</button>
+              {count}
+              <button className='button-24' onClick={inc}>+</button>
+            </div>
+          </Card.Body>
         </Card>
-
         <Card
           onClick={handleClick}
           className="basic-card"
           style={{ width: "30%" }}
         >
           <Card.Img variant="top" id="all" src={channamasala} />
-          <a href="/biryani">
-            <Card.Body>
-              <Card.Title className="card-title">Channa Masala</Card.Title>
-              <Button variant="success" className="center">
-                ADD
-              </Button>
-            </Card.Body>
-          </a>
+          <Card.Body>
+            <h6 className="display-6">Channa Masala</h6>
+            <div>
+              <button className='button-24' onClick={dec}>-</button>
+              {count}
+              <button className='button-24' onClick={inc}>+</button>
+            </div>
+          </Card.Body>
         </Card>
 
         <Card
@@ -64,14 +62,14 @@ const All = () => {
           style={{ width: "30%" }}
         >
           <Card.Img variant="top" id="all" src={tandoorichicken} />
-          <a href="/biryani">
-            <Card.Body>
-              <Card.Title className="card-title">Tandoori Chicken</Card.Title>
-              <Button variant="success" className="center">
-                ADD
-              </Button>
-            </Card.Body>
-          </a>
+          <Card.Body>
+            <h6 className="display-6">Tandoori Chicken</h6>
+            <div>
+              <button className='button-24' onClick={dec}>-</button>
+              {count}
+              <button className='button-24' onClick={inc}>+</button>
+            </div>
+          </Card.Body>
         </Card>
       </div>
     </div>
