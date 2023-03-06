@@ -20,11 +20,10 @@ const All = () => {
     navigate(e.target.id);
   };
 
-  const [modalShow, setModalShow] = React.useState(false);
 
   return (
     <div>
-      <h2 className="heading">All Menu</h2>
+      <h2 className="display-4">All Menu</h2>
       <div id="card-display">
         <Card
           onClick={handleClick}
