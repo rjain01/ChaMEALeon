@@ -14,7 +14,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src= 'https://picsum.photos/1530/400'
+          src='https://picsum.photos/1530/400'
           alt="First slide"
         />
         <Carousel.Caption>
@@ -25,7 +25,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src= 'https://picsum.photos/1530/400'
+          src='https://picsum.photos/1530/400'
           alt="First slide"
         />
         <Carousel.Caption>
@@ -36,7 +36,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src= 'https://picsum.photos/1530/400'
+          src='https://picsum.photos/1530/400'
           alt="First slide"
         />
         <Carousel.Caption>
