@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.center{
+    justify-content: center;
+        align-items: center;
+}
+
 #card-display{
     display: flex;
     padding: 2% 2% 0 2%;
