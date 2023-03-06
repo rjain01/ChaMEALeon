@@ -21,7 +21,6 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Take the stress out of meal time.Ready to cook meal along with its recipe</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
