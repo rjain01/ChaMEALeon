@@ -1,0 +1,18 @@
+.heading{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#card-display{
+    display: flex;
+    padding: 2% 2% 0 2%;
+    justify-content: center;
+}
+
+.basic-card {
+    margin: 2%;
+}
+
+.card-title{
+    text-align: center;
+}
