@@ -15,7 +15,7 @@ function ControlledCarousel() {
         <img
           className="banner-image"
           src= 'https://picsum.photos/1530/400'
-          alt="First slide"
+          alt="First Slide"
         />
         <Carousel.Caption>
           <h3>First sliddjkwbdkjwbdke label</h3>
