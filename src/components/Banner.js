@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../styles/Banner.css'
+import banner1 from '../assets/banner1.png'
+import banner2 from '../assets/banner2.jpg'
+import banner3 from '../assets/banner3.jpg'
 
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
@@ -14,7 +17,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src= 'https://picsum.photos/1530/400'
+          src= {banner1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -24,7 +27,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src='https://picsum.photos/1530/400'
+          src={banner2}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -34,7 +37,7 @@ function ControlledCarousel() {
       <Carousel.Item>
         <img
           className="banner-image"
-          src='https://picsum.photos/1530/400'
+          src={banner3}
           alt="First slide"
         />
         <Carousel.Caption>

@@ -15,10 +15,10 @@ import LowCarb from './components/diet-types/LowCarb';
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path='/' element={
           <div className="App">
-            <Navbar />
             <Banner />
             <CategoryCard />
           </div>
