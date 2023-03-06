@@ -18,8 +18,8 @@ function ControlledCarousel() {
           alt="First Slide"
         />
         <Carousel.Caption>
-          <h3>First sliddjkwbdkjwbdke label</h3>
-          <p>Nulla vitae elit ld wbdjibero, a pharetra augue mollis interdum.</p>
+          <h3>Heading</h3>
+          <p>Take the stress out of meal time.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
