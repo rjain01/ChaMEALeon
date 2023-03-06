@@ -8,7 +8,8 @@ import "../styles/Navbar.css";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <div id="nav-container">
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" id='nav-bar'>
       <Container>
         <Navbar.Brand href="#home">Chamealeon</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -37,6 +38,7 @@ function CollapsibleExample() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 
