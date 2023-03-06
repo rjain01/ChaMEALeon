@@ -5,7 +5,7 @@ import '../styles/CategoryCard.css'
 function BasicExample() {
   return (
     <div>
-        <h2>Brosw by categories</h2>
+        <h2>Browse by Meal Preference</h2>
     <div id='category-cards'>
         <Card className='category-card' style={{ width: '20%' }}>
         <Card.Img variant="top" src="https://picsum.photos/100" />

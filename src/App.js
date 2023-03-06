@@ -2,15 +2,16 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import CategoryCard from './components/CategoryCard'
+import TopPicks from './components/TopPicks'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Banner />
-      <div>
-        <CategoryCard />
-      </div>
+      <CategoryCard />
+      <TopPicks/>
+
     </div>
   );
 }
