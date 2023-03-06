@@ -60,3 +60,7 @@
 .button-24:active {
   opacity: .5;
 }
+
+.heading{
+  text-align:center;
+}

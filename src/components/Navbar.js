@@ -26,10 +26,9 @@ function CollapsibleExample() {
             <Button variant="outline-success">Search</Button>
           </Form>
           <Nav>
-            <Nav.Link href="#deets">Home</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Menu
-            </Nav.Link>
+            <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Link eventKey={2} href="#">Menu</Nav.Link>
+            <Nav.Link href="#">Articles</Nav.Link>
             {/* <FontAwesomeIcon icon="fa-thin fa-cart-shopping" /><Badge bg="secondary">9</Badge> */}
           </Nav>
         </Navbar.Collapse>

@@ -4,18 +4,18 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "../../styles/Menu.css";
 import biryani from "../../assets/all/biryani.jpg";
-import channamasala from "../../assets/all/biryani.jpg";
-import tandoorichicken from "../../assets/all/biryani.jpg";
+import channamasala from "../../assets/all/chana_masala.jpeg";
+import tandoorichicken from "../../assets/all/chicken.jpeg";
 
 const All = () => {
   let navigate = useNavigate();
   const [count, setCount] = useState(0);
   const inc = () => {
-    setCount(count + 1)
-  }
+    setCount(count + 1);
+  };
   const dec = () => {
-    setCount(count - 1)
-  }
+    setCount(count - 1);
+  };
   const handleClick = (e) => {
     navigate(e.target.id);
   };
@@ -23,8 +23,8 @@ const All = () => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div> 
-       <h2 class="heading">All Menu</h2>
+    <div>
+      <h2 className="heading">All Menu</h2>
       <div id="card-display">
         <Card
           onClick={handleClick}
@@ -32,12 +32,16 @@ const All = () => {
           style={{ width: "30%" }}
         >
           <Card.Img variant="top" id="all" src={biryani} />
-            <Card.Body>
+          <Card.Body>
             <h6 className="display-6">Biryani</h6>
             <div>
-              <button className='button-24' onClick={dec}>-</button>
+              <button className="button-24" onClick={dec}>
+                -
+              </button>
               {count}
-              <button className='button-24' onClick={inc}>+</button>
+              <button className="button-24" onClick={inc}>
+                +
+              </button>
             </div>
           </Card.Body>
         </Card>
@@ -50,9 +54,13 @@ const All = () => {
           <Card.Body>
             <h6 className="display-6">Channa Masala</h6>
             <div>
-              <button className='button-24' onClick={dec}>-</button>
+              <button className="button-24" onClick={dec}>
+                -
+              </button>
               {count}
-              <button className='button-24' onClick={inc}>+</button>
+              <button className="button-24" onClick={inc}>
+                +
+              </button>
             </div>
           </Card.Body>
         </Card>
@@ -66,9 +74,13 @@ const All = () => {
           <Card.Body>
             <h6 className="display-6">Tandoori Chicken</h6>
             <div>
-              <button className='button-24' onClick={dec}>-</button>
+              <button className="button-24" onClick={dec}>
+                -
+              </button>
               {count}
-              <button className='button-24' onClick={inc}>+</button>
+              <button className="button-24" onClick={inc}>
+                +
+              </button>
             </div>
           </Card.Body>
         </Card>
